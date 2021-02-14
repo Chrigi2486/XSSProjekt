@@ -31,6 +31,17 @@ h2 { /* Eigenschaften von h2 */
   width: 100%; 
   font-family: Georgia;
 }
+
+p{
+color: white;
+text-align: center;
+}
+
+a{
+  color: white;
+  text-align: center;
+}
+
 .gap{
    padding-top: 80px; /* Oben Platz machen */
 }
