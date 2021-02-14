@@ -32,14 +32,15 @@ h2 { /* Eigenschaften von h2 */
   font-family: Georgia;
 }
 
-p{
+p{ /* Eigenschaften von paragraph p */
 color: white;
 text-align: center;
+padding-bottom: 30px; 
 }
 
-a{
-  color: white;
-  text-align: center;
+a{ /* Eigenschaften von link a */
+  color:  #add8e6;
+  padding-left: 46.5%;
 }
 
 .gap{
