@@ -13,23 +13,23 @@ body {
 
 h1 { /* Eigenschaften von h1 */
   color: #FFF ;
-  font-size: 2em;
-  padding-top: 100px;
-  width: 100%;
-  font-family: Georgia;
-  text-align: center;
+  font-size: 2em; /* schreibgrösse */
+  padding-top: 100px; /* Freiraum oben */
+  width: 100%;  /* Wo erscheint die Schrift auf dem Screen */
+  font-family: Georgia; /* Schriftart */
+  text-align: center; /* Wo erscheint die Schrift auf dem Screen */
 }
 
 h2 { /* Eigenschaften von h2 */
 
   color:#FFF ;
-  font-weight: 100;
-  font-size: 22px;
-  line-height: 24px;
-  padding-bottom: 60px;
-  text-align: center;
-  width: 100%; 
-  font-family: Georgia;
+  font-weight: 100; /* Dicke der Schrift */
+  font-size: 22px;  /* schreibgrösse */
+  line-height: 24px;  /* abstand oben */
+  padding-bottom: 60px; /* Freiraum unten */
+  text-align: center;/* Wo erscheint die Schrift auf dem Screen */
+  width: 100%; /* Wo erscheint die Schrift auf dem Screen */
+  font-family: Georgia; /* Schriftart */
 }
 
 p{ /* Eigenschaften von paragraph p */
@@ -40,9 +40,20 @@ padding-bottom: 30px;
 
 a{ /* Eigenschaften von link a */
   color:  #add8e6;
-  padding-left: 46.5%;
+  
 }
 
 .gap{
    padding-top: 80px; /* Oben Platz machen */
 }
+#link-container {
+    text-align: center;
+}
+/*
+#link {
+    background: black;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+*/
