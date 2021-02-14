@@ -1,1 +1,36 @@
 /* css file*/
+/* Kommentar */
+
+body {
+
+  background: linear-gradient(-45deg, #35577D, #141E30); /* Farbverlauf im Hintergrund */
+
+}
+
+.non-persistent-article, .persistent-article{
+  color:white;
+}
+
+h1 { /* Eigenschaften von h1 */
+  color: #FFF ;
+  font-size: 2em;
+  padding-top: 100px;
+  width: 100%;
+  font-family: Georgia;
+  text-align: center;
+}
+
+h2 { /* Eigenschaften von h2 */
+
+  color:#FFF ;
+  font-weight: 100;
+  font-size: 22px;
+  line-height: 24px;
+  padding-bottom: 60px;
+  text-align: center;
+  width: 100%; 
+  font-family: Georgia;
+}
+.gap{
+   padding-top: 80px; /* Oben Platz machen */
+}
