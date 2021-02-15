@@ -1,10 +1,8 @@
 /* css file*/
 /* Kommentar */
 
-body {
-
+body{
   background: linear-gradient(-45deg, #35577D, #141E30); /* Farbverlauf im Hintergrund */
-
 }
 
 .non-persistent-article, .persistent-article{ /* Eigenschaften von den beiden unterkapitel-titel */
@@ -13,23 +11,25 @@ body {
 
 h1 { /* Eigenschaften von h1 */
   color: #FFF ;
-  font-size: 2em; /* schreibgrösse */
-  padding-top: 100px; /* Freiraum oben */
   width: 100%;  /* Wo erscheint die Schrift auf dem Screen */
   font-family: Georgia; /* Schriftart */
+  font-size: 2em; /* schreibgrösse */
+  padding-top: 100px; /* Freiraum oben */
   text-align: center; /* Wo erscheint die Schrift auf dem Screen */
 }
 
 h2 { /* Eigenschaften von h2 */
 
   color:#FFF ;
+  width: 100%; /* Wo erscheint die Schrift auf dem Screen */
   font-weight: 100; /* Dicke der Schrift */
   font-size: 22px;  /* schreibgrösse */
-  line-height: 24px;  /* abstand oben */
-  padding-bottom: 60px; /* Freiraum unten */
-  text-align: center;/* Wo erscheint die Schrift auf dem Screen */
-  width: 100%; /* Wo erscheint die Schrift auf dem Screen */
   font-family: Georgia; /* Schriftart */
+  padding-bottom: 60px; /* Freiraum unten */
+  line-height: 24px;  /* abstand oben */
+  text-align: center;/* Wo erscheint die Schrift auf dem Screen */
+
+
 }
 
 p{ /* Eigenschaften von paragraph p */
