@@ -5,7 +5,7 @@ body{
   background: linear-gradient(-45deg, #35577D, #141E30); /* Farbverlauf im Hintergrund */
 }
 
-.non-persistent-article, .persistent-article{ /* Eigenschaften von den beiden unterkapitel-titel */
+.article-style{ /* Eigenschaften von den beiden unterkapitel-titel */
   color:white;
 }
 
