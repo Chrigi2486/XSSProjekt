@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Comments</title>
+	</head>
 	<body>
 		Comments Page!
 		<ul>
-			{}
+			{{comments | safe}}
 		</ul>
 		<form action="/comments/post/" method="post">
 			<label>Name:</label>
