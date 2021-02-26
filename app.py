@@ -1,6 +1,6 @@
 import os
 from json import dump, load
-from flask import Flask, request, redirect
+from flask import Flask, request, redirect, render_template
 
 
 class App(Flask):
@@ -17,17 +17,13 @@ class App(Flask):
 
         check_for_file('./comments/comments.json', l=True)
 
-    def add_comment(self, comment):
-        pass
-
 
 app = App(__name__)
 
 
 @app.route('/', methods=['GET'])
 def get_root():
-    with open('./index.html', 'r') as index_page:
-        return index_page.read()
+    return render_template('main.html')
 
 
 @app.route('/comments/', methods=['GET'])
@@ -38,9 +34,7 @@ def get_comments():
         template = comment_template.read()
     formatted_comments = [template.format(**comment) for comment in comments]
     joined_comments = '\n'.join(formatted_comments)
-    with open('./comments/index.html', 'r') as comments_page:
-        comments_content = comments_page.read()
-    return comments_content.format(joined_comments)
+    return render_template('comments.html', comments=joined_comments)
 
 
 @app.route('/comments/post/', methods=['POST'])
@@ -63,6 +57,15 @@ def post_reset():
     with open('./comments/comments.json', 'w') as comments_file:
         comments_file.write('[]')
     return redirect('/comments/', code=302)
+
+
+@app.route('/search/', methods=['GET'])
+def get_search():
+    search = request.args.get('search')
+    if search:
+        return render_template('search.html', search=search)
+    else:
+        return render_template('search.html', search='')
 
 
 if __name__ == '__main__':
