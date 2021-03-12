@@ -30,7 +30,7 @@ def get_root():
 def get_comments():
     with open('./comments/comments.json', 'r') as comments_file:
         comments = load(comments_file)
-    with open('./comments/comment_template.html', 'r') as comment_template:
+    with open('./templates/comment_template.html', 'r') as comment_template:
         template = comment_template.read()
     formatted_comments = [template.format(**comment) for comment in comments]
     joined_comments = '\n'.join(formatted_comments)
@@ -64,8 +64,13 @@ def get_search():
     search = request.args.get('search')
     if search:
         return render_template('search.html', search=search)
-    else:
-        return render_template('search.html', search='')
+    return render_template('search.html', search='')
+
+
+@app.route('/login', methods=['POST'])
+def post_login():
+    data = dict(request.form)
+    pass
 
 
 if __name__ == '__main__':
