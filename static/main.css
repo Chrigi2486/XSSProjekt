@@ -2,7 +2,9 @@
 /* Kommentar */
 
 body{
+  font-family: 'Roboto', sans-serif;
   background: linear-gradient(-45deg, #35577D, #141E30); /* Farbverlauf im Hintergrund */
+  color: #fffaf0;
 }
 
 .article-style{ /* Eigenschaften von den beiden unterkapitel-titel */
@@ -12,7 +14,7 @@ body{
 h1 { /* Eigenschaften von h1 */
   color: #FFF ;
   width: 100%;  /* Wo erscheint die Schrift auf dem Screen */
-  font-family: Georgia; /* Schriftart */
+  font-family: 'Roboto', sans-serif; /* Schriftart */
   font-size: 2em; /* schreibgrösse */
   padding-top: 100px; /* Freiraum oben */
   text-align: center; /* Wo erscheint die Schrift auf dem Screen */
@@ -24,7 +26,7 @@ h2 { /* Eigenschaften von h2 */
   width: 100%; /* Wo erscheint die Schrift auf dem Screen */
   font-weight: 100; /* Dicke der Schrift */
   font-size: 22px;  /* schreibgrösse */
-  font-family: Georgia; /* Schriftart */
+  /*font-family: Georgia; /* Schriftart */
   padding-bottom: 60px; /* Freiraum unten */
   line-height: 24px;  /* abstand oben */
   text-align: center;/* Wo erscheint die Schrift auf dem Screen */
@@ -57,3 +59,49 @@ a{ /* Eigenschaften von link a */
     padding: 10px;
 }
 */
+.comments {
+  list-style-type: none;
+}
+
+.comments li {
+  width: 400px;
+  height: 100px;
+  background-color: #26272B;
+  border-width: 5px;
+  margin-bottom: 40px;
+}
+.left {
+  border-left-style: solid;
+}
+.right {
+  border-right-style: solid;
+}
+.content {
+  color: #fffaf0;
+  text-align: left;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+.username {
+  padding-right: 15px;
+  text-align: right;
+  color: #9FA2A7;
+}
+.red {
+  border-color: #FF0000;
+}
+.purple {
+  border-color: #CC00FF;
+}
+.pink {
+  border-color: #FF00FF;
+}
+.green {
+  border-color: #00FF00;
+}
+.blue {
+  border-color: #00FFFF;
+}
+.yellow {
+  border-color: #FFFF00;
+}
