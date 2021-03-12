@@ -1,4 +1,5 @@
 import os
+import random
 from json import dump, load
 from flask import Flask, request, redirect, render_template
 
@@ -17,6 +18,8 @@ class App(Flask):
 
         check_for_file('./comments/comments.json', l=True)
 
+        self.neon_colors = ['blue', 'green', 'purple', 'pink', 'yellow', 'red']
+
 
 app = App(__name__)
 
@@ -32,7 +35,7 @@ def get_comments():
         comments = load(comments_file)
     with open('./templates/comment_template.html', 'r') as comment_template:
         template = comment_template.read()
-    formatted_comments = [template.format(**comment) for comment in comments]
+    formatted_comments = [template.format(color=random.choice(app.neon_colors), position=('right' if index % 2 else 'left'), **comment) for index, comment in enumerate(comments)]
     joined_comments = '\n'.join(formatted_comments)
     return render_template('comments.html', comments=joined_comments)
 
