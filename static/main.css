@@ -84,6 +84,8 @@ a{ /* Eigenschaften von link a */
 }
 .username {
   padding-right: 15px;
+  position: relative;
+  top: 30px;
   text-align: right;
   color: #9FA2A7;
 }

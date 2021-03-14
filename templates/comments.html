@@ -6,6 +6,7 @@
 	</head>
 	<body>
 		<h1>Comments Page!</h1>
+		
 		<form action="/comments/post/" method="post" autocomplete="off">
 			<label>Name:</label>
 			<input type="text" name="name"><br><br>
@@ -16,6 +17,7 @@
 		<form action="/comments/reset/" method="post">
 			<input type="submit" value="Reset Comments">
 		</form>
+		
 		<ul class="comments">
 			{{comments | safe}}
 		</ul>
