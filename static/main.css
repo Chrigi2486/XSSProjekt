@@ -21,7 +21,6 @@ h1 { /* Eigenschaften von h1 */
 }
 
 h2 { /* Eigenschaften von h2 */
-
   color:#FFF ;
   width: 100%; /* Wo erscheint die Schrift auf dem Screen */
   font-weight: 100; /* Dicke der Schrift */
@@ -30,19 +29,24 @@ h2 { /* Eigenschaften von h2 */
   padding-bottom: 60px; /* Freiraum unten */
   line-height: 24px;  /* abstand oben */
   text-align: center;/* Wo erscheint die Schrift auf dem Screen */
-
-
 }
 
-p{ /* Eigenschaften von paragraph p */
-color: white;
-text-align: center;
-padding-bottom: 30px; 
+p { /* Eigenschaften von paragraph p */
+  color: white;
+  text-align: center;
+  padding-bottom: 30px; 
 }
 
-a{ /* Eigenschaften von link a */
+a { /* Eigenschaften von link a */
   color:  #add8e6;
-  
+}
+
+textarea {
+  resize: none;
+}
+
+form {
+  display: inline-block;
 }
 
 .gap{
@@ -75,9 +79,11 @@ a{ /* Eigenschaften von link a */
 .bleft {
   border-left-style: solid;
 }
+
 .bright {
   border-right-style: solid;
 }
+
 .content {
   color: #fffaf0;
   text-align: left;
@@ -90,6 +96,7 @@ a{ /* Eigenschaften von link a */
   text-align: right;
   color: #9FA2A7;
 }
+
 .username.uleft{
   right: 15px;
 
@@ -97,24 +104,56 @@ a{ /* Eigenschaften von link a */
 .username.uright{
   right: 10px;
 }
+
 .red {
   border-color: #FF0000;
 }
+
 .purple {
   border-color: #CC00FF;
 }
+
 .pink {
   border-color: #FF00FF;
 }
+
 .green {
   border-color: #00FF00;
 }
+
 .blue {
   border-color: #00FFFF;
 }
+
 .yellow {
   border-color: #FFFF00;
 }
-.commenform{
-    
+
+.commentform {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
 }
+
+.submit {
+  position: relative;
+  right: -5.75%;
+}
+.resetcomments{
+  position: relative;
+  left: 400%;
+  top: -40px;
+}
+
+ .button{
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  background: #89CFF0;
+  border-color: black;
+  border-width: 3px;
+ }
+ .button:hover{
+  background: #00ff99;
+ }
