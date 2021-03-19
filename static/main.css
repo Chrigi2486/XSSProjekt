@@ -69,11 +69,13 @@ a{ /* Eigenschaften von link a */
   background-color: #26272B;
   border-width: 5px;
   margin-bottom: 40px;
+  position: relative;
+
 }
-.left {
+.bleft {
   border-left-style: solid;
 }
-.right {
+.bright {
   border-right-style: solid;
 }
 .content {
@@ -83,11 +85,17 @@ a{ /* Eigenschaften von link a */
   padding-top: 10px;
 }
 .username {
-  padding-right: 15px;
-  position: relative;
-  top: 30px;
+  position: absolute;
+  top: 60px;
   text-align: right;
   color: #9FA2A7;
+}
+.username.uleft{
+  right: 15px;
+
+}
+.username.uright{
+  right: 10px;
 }
 .red {
   border-color: #FF0000;
@@ -106,4 +114,7 @@ a{ /* Eigenschaften von link a */
 }
 .yellow {
   border-color: #FFFF00;
+}
+.commenform{
+    
 }
