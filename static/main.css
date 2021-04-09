@@ -1,7 +1,7 @@
 /* css file*/
 /* Kommentar */
 
-body{
+body {
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(-45deg, #35577D, #141E30); /* Farbverlauf im Hintergrund */
   color: #fffaf0;
@@ -49,12 +49,14 @@ form {
   display: inline-block;
 }
 
-.gap{
-   padding-top: 80px; /* Oben Platz machen */
+.gap {
+  padding-top: 80px; /* Oben Platz machen */
 }
+
 #link-container {
-    text-align: center;
+  text-align: center;
 }
+
 /*
 #link {
     background: black;
@@ -74,8 +76,8 @@ form {
   border-width: 5px;
   margin-bottom: 40px;
   position: relative;
-
 }
+
 .bleft {
   border-left-style: solid;
 }
@@ -90,6 +92,7 @@ form {
   margin-left: 10px;
   padding-top: 10px;
 }
+
 .username {
   position: absolute;
   top: 60px;
@@ -97,11 +100,11 @@ form {
   color: #9FA2A7;
 }
 
-.username.uleft{
+.username.uleft {
   right: 15px;
-
 }
-.username.uright{
+
+.username.uright {
   right: 10px;
 }
 
@@ -140,20 +143,22 @@ form {
   position: relative;
   right: -5.7%;
 }
-.resetcomments{
+
+.resetcomments {
   position: relative;
   left: 400%;
   top: -40px;
 }
 
- .button{
+.button {
   width: 150px;
   height: 40px;
   border-radius: 15px;
   background: #89CFF0;
   border-color: black;
   border-width: 3px;
- }
- .button:hover{
+}
+
+.button:hover {
   background: #00ff99;
- }
+}
