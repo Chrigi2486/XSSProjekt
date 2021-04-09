@@ -162,3 +162,8 @@ form {
 .button:hover {
   background: #00ff99;
 }
+
+.scrollup {
+  width: 50px;
+  height: 40px;
+}
