@@ -36,7 +36,7 @@
 			</article>
 
 		<h3>Reflextiertes Cross-site Scripting </h3>
-		<img class="picture right" src="/static/reklektiertes_cross_site_scripting_neu_DE_desktop.png" src="../static/reklektiertes_cross_site_scripting_neu_DE_desktop.png">
+		<img class="picture left" src="/static/reklektiertes_cross_site_scripting_neu_DE_desktop.png" src="../static/reklektiertes_cross_site_scripting_neu_DE_desktop.png">
 			<article class=".article left">
 				Beim reflektierenden beziehungsweise nicht-persistenten Cross-Site Scripting wird der Schadcode in einen URL implementiert. Ruft ein Nutzer die präparierte Adresse über einen Webbrowser auf, wird das schadhafte Skript mitgeschickt. Nicht ausreichend gesicherte Server untersuchen den Code nicht genügend und erstellen für den User die manipulierte Website mit dem Schadcode der Angreifer. Macht der User nun eine Eingabe, könnte der Angreifer diese Angaben klauen. Diese Art von Angriff ist daher sehr heikel, da sie für den User nicht umgehend feststellbar ist. Der User hat das Gefühl, dass er sich auf der angeblich vertrauenswürdigen Website befindet. Würde der User die Website mit dem richtigen Link laden, wäre auch kein Schadcode in der Webanwendung enthalten. 
 
@@ -44,6 +44,7 @@
 			</article>
 
 		<h3>Lokales Cross Site Scripting (DOM-basiert) </h3>
+		<img class="picture right" src="/static/lokales_cross_site_scripting_neu_DE_desktop.png" src="../static/lokales_cross_site_scripting_neu_DE_desktop.png">
 			<article class=".article right">
 				eim lokalen Cross-Site Scripting sind nicht der Server oder die Webanwendung das Problem, sondern der User, der einen Browser mit einer Sicherheitslücke benutzt. Somit ist diese Art von XSS sogar bei statischen Webseiten möglich, wenn diese JavaScript unterstützen. Kommt es zu einer Attacke, platzieren die Angreifer den Schadcode direkt im Browser des Users. Dies erfolgt über präparierte Links, welche der User öffnet. Diese unsichere Website ladet den Schadcode, welcher nun im Hintergrund ausgeführt wird. Ladet der User nun wieder sichere Webseiten und loggt sich ein, laufen serverseitige Sicherheitsmassnahmen ins Leere, da sie von diesem Angriff nichts wissen.
 				Aus eigener Erfahrung kennt man solche Attacken beispielsweise aus Gewinnspielen, welche einem per Spam-Mail zugeschickt werden oder im Internet aufpoppen. Anschliessend wird unbemerkt der Schadcode in den Browser des Users, bspw. Google Chrome, eingefügt. Nun läuft dieses «Programm» immer im Hintergrund, wenn der Browser geöffnet wurde. Loggt man sich nun bei seiner Bank ein, so werden die Anmeldedaten trotzdem gestohlen, da das Problem lokal, also auf dem eigenen Rechner im Browser sich befindet und nicht etwa auf dem Webserver der Bank.
