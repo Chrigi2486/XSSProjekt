@@ -41,35 +41,27 @@ a { /* Eigenschaften von link a */
   color:  #add8e6;
 }
 
-textarea {
+textarea { /* Textfeld (kann nicht grösser oder kleiner sein) */
   resize: none;
 }
 
-form {
+form { /* Comment section: Eingabe ist nebeneinander */
   display: inline-block;
 }
 
-.gap {
-  padding-top: 80px; /* Oben Platz machen */
+.gap {  /* Oben Platz machen */
+  padding-top: 80px; 
 }
 
-#link-container {
+#link-container { /* In die Mitte schieben */
   text-align: center;
 }
 
-/*
-#link {
-    background: black;
-    color: white;
-    display: inline-block;
-    padding: 10px;
-}
-*/
-.comments {
+.comments { /* Auflistungspunkte rauslöschen */
   list-style-type: none;
 }
 
-.comments li {
+.comments li { /* Kommentarfeldformatierung */
   width: 400px;
   height: 100px;
   background-color: #26272B;
@@ -78,37 +70,37 @@ form {
   position: relative;
 }
 
-.bleft {
+.bleft { /* feiner, farbiger Rand der Kommentare links */
   border-left-style: solid;
 }
 
-.bright {
+.bright { /* feiner, farbiger Rand der Kommentare rechts */
   border-right-style: solid;
 }
 
-.content {
+.content { /* Text im Kommentarfeld */
   color: #fffaf0;
   text-align: left;
   margin-left: 10px;
   padding-top: 10px;
 }
 
-.username {
+.username { /* Formatierung des Namens im Kommentarfeld */
   position: absolute;
   top: 60px;
   text-align: right;
   color: #9FA2A7;
 }
 
-.username.uleft {
+.username.uleft { /* Formatierung des Namens im Kommentarfeld im Bezug auf die feinen, farbigen Ränder  */
   right: 15px;
 }
 
-.username.uright {
+.username.uright { /* Formatierung des Namens im Kommentarfeld im Bezug auf die feinen, farbigen Ränder  */
   right: 10px;
 }
 
-.red {
+.red { /* Zufallsfarbe für die feinen, farbigen Ränder der Kommentarfelder  */
   border-color: #FF0000;
 }
 
@@ -132,25 +124,25 @@ form {
   border-color: #FFFF00;
 }
 
-.commentform {
+.commentform { /* Box mit den Comments-settings */
   position: relative;
   text-align: center;
   margin: 0 auto;
   width: 100%;
 }
 
-.submit {
+.submit { /* submit_Button */
   position: relative;
   right: -5.7%;
 }
 
-.resetcomments {
+.resetcomments { /* resetcomments-Button */
   position: relative;
   left: 400%;
   top: -40px;
 }
 
-.button {
+.button { /* Allg. Einstellungen für Buttons */
   width: 150px;
   height: 40px;
   border-radius: 15px;
@@ -159,11 +151,11 @@ form {
   border-width: 3px;
 }
 
-.button:hover {
+.button:hover { /* Animation für Button */
   background: #00ff99;
 }
 
-.scrollup {
+.scrollup { /* Zurück-nach-oben Button */
   position: fixed; 
   font-size: 12px;
   width: auto;
@@ -174,11 +166,11 @@ form {
   background-color: #808080;
   line-height: 50px;
   padding: 0px 25px 0px 25px;
-  margin-left: 46%;
+  margin-left: 91%;
   border: 1px solid #c9c9c9;
   border-radius: 15px;
   transition: 1s; } /* Slide-Animation am Anfang */
 }
-.scrollup:hover{
+.scrollup:hover{ /* Animation für Buttons */
   background: #00ff99; 
 }
