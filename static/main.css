@@ -171,6 +171,33 @@ form { /* Comment section: Eingabe ist nebeneinander */
   border-radius: 15px;
   transition: 1s; } /* Slide-Animation am Anfang */
 }
-.scrollup:hover{ /* Animation für Buttons */
+.scrollup:hover{ /* Animation für Buttons   */
   background: #00ff99; 
 }
+
+.topnavigation{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 0px;
+  padding-left: 0px;
+}
+.topnavigation a{
+  text-decoration: none;
+  font-family: arial black;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  padding: 25px;
+  display: block;
+  float: right;
+  padding-left: 6.65%;
+  padding-right: 6.65%;
+}
+.topnavigation a:hover{
+  background: #808080;
+  color:black;
+}
+

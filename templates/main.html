@@ -9,21 +9,31 @@
 		<title>Cross-site scripting</title> <!--Wird oben im Tab angezeigt-->
 	</head>
 <body>
-	<h1>Cross-site scripting</h1>
 
-	<h2>Allgemein</h2>
-	
-	<article class="article left">
-		
-		Cross-Site Scripting (XSS) ist eine Angriffsform, bei der man an vertrauliche Daten gelangt, Webapplikationen übernimmt oder sonstige Schäden anrichtet. Sie ist eine der häufigsten Angriffsmethoden im Internet. Hierbei wird der «Schadcode» durch eine Sicherheitslücke auf dem Client oder dem Server in eine scheinbar sichere Umgebung eingebettet. Mit Hilfe von XSS lassen sich vertrauliche Informationen wie Passwörter ergaunern, Browser übernehmen oder Internetseiten verändern.
-		Cross-Site-Scripting verwendet zu diesem Zweck die Programmiersprache JavaScript. JavaScript ist eine sehr verbreitete Programmiersprache im Internet, die bei Webseiten Hintergrundbefehle ausführen und den HTML Code der Webseite dynamisch verändern kann.
-		Die Gefahr des Cross-Site-Scripting besteht immer dann, wenn eine Webanwendung gesammelte Daten nicht ausreichend überprüft und diese Daten direkt in den HTML Code der Webseite einfügt. Dies kann zur Einbettung von JavaScript Code führen, welcher bei einem Besuch dieser Webseite vom Browser des Clients ausgeführt wird.
+	<div class="topnavigation">
+		<a href="#Glossar">Glossar</a>
+		<a href="#Auswirkungen von XSS auf die Welt">Auswirkungen von XSS </a>
+		<a href="#Abwehr">Abwehr</a>
+		<a href="#Angriff">Angriff</a>
+		<a href="#Allgemeines">Allgemeines</a>		
+	</div>
 
-		
-	</article>
+	<h1>Cross-site Scripting</h1>
 
-	<h2>Angriff</h2>
+	<div id="Allgemeines">
+		<h2 >Allgemeines</h2>
+			<article class="article left">
+				
+				Cross-Site Scripting (XSS) ist eine Angriffsform, bei der man an vertrauliche Daten gelangt, Webapplikationen übernimmt oder sonstige Schäden anrichtet. Sie ist eine der häufigsten Angriffsmethoden im Internet. Hierbei wird der «Schadcode» durch eine Sicherheitslücke auf dem Client oder dem Server in eine scheinbar sichere Umgebung eingebettet. Mit Hilfe von XSS lassen sich vertrauliche Informationen wie Passwörter ergaunern, Browser übernehmen oder Internetseiten verändern.
+				Cross-Site-Scripting verwendet zu diesem Zweck die Programmiersprache JavaScript. JavaScript ist eine sehr verbreitete Programmiersprache im Internet, die bei Webseiten Hintergrundbefehle ausführen und den HTML Code der Webseite dynamisch verändern kann.
+				Die Gefahr des Cross-Site-Scripting besteht immer dann, wenn eine Webanwendung gesammelte Daten nicht ausreichend überprüft und diese Daten direkt in den HTML Code der Webseite einfügt. Dies kann zur Einbettung von JavaScript Code führen, welcher bei einem Besuch dieser Webseite vom Browser des Clients ausgeführt wird.
 
+				
+			</article>
+	</div>
+	<div id="Angriff">
+		<h2>Angriff</h2>
+	</div>
 		<h3 class="gap">Persistentes Cross Site Scripting</h3>
 		<img class="picture right" src="/static/persistentes_cross_site_scripting_neu_DE_desktop.png" src="../static/persistentes_cross_site_scripting_neu_DE_desktop.png">
 			<article class="article right">
@@ -52,6 +62,47 @@
 
 				<link >
 			</article>
+	<div id="Abwehr">
+		<h2>Abwehr</h2>
+	</div>
+		<h3>Clientseitiger Schutz </h3>
+		<img class="picture left" src="" src="">
+			<article class=".article left">
+				Beim clientseitigen Schutz steht hauptsächlich die Blockierung von gefährlichen Skripten im Vordergrund. Die simpelste Möglichkeit, um einen Angriff zu verhindern, besteht darin, dass man ganz einfach die JavaScript-Unterstützung im Browser ausschaltet. Dadurch wird nämlich jeglicher JavaScript-Code nicht gelesen bzw. ignoriert und die schädlichen Skripte können nicht ausgeführt werden. Man nennt dies auch das Deaktivieren des Active-Scripting. Für die meisten Browser gibt es heute aber sogenannte Add-ons, welche bereits standardmässig Websiteinhalte wie JavaScript, Microsoft Silverlight, Java-Applets oder wie früher Adobe Flash, automatisch sperren. Die Sperren können dann aber natürlich vom User temporär aufgehoben werden. Man kann Webseiten, wenn man ihnen zu 100% vertraut auch auf eine sogenannte Whitelist setzen.
+				Die Deaktivierung von JavaScript, kommt dennoch mit einigen Nachteilen. Bei den meisten modernen Webseiten, wird JavaScript benutzt, um Webseiten dynamisch anzuzeigen und ihnen weitere Funktionalitäten zu geben. Mit der Deaktivierung von JavaScript muss man sich dementsprechend zwischen Sicherheit und Nutzbarkeit entscheiden.
+				Zudem ist es wichtig, dass man die Browser-Updates durchführt, um präventiv gegen lokales XSS geschützt zu sein. Grundsätzlich gilt aber folgender Anspruch: Sie sollten bei externen Daten wie Links, immer misstrauisch sein und diese sorgfältig prüfen, bevor Sie sie verwenden.
+				
+			</article>
+
+		<h3>Serverseitiger Schutz </h3>
+			<article class=".article right">
+				Als Betreiber einer Webseite fallen die Schutzmassnahmen gegen Cross-Site Scripting mühsam aus. Ein Websitebetreiber hat nämlich zwei Möglichkeiten. Einerseits kann mit sehr genauen, aber auch mühsamen Code-Richtlinien und Eingabeprüfungen dem Webmaster auf die Sprünge helfen, die Sensibilität bzw. die Angriffsfläche der Webseite zu minimieren. Wie bereits erwähnt gibt es aber auch die Möglichkeit, dass ein Websitebetreiber über sogenanntes Whitelisting gutartige Eingabewerte definiert. Demnach würde also schadhafter Code gar nicht an den Server übermittelt. Das Problem bei dieser Maßnahme besteht nun darin, dass das Ganze sehr aufwendig ist und damit ein hohes Fehlerpotenzial aufweiset. Durch unvollständige Angaben ist das Whitelisting zudem ziemlich einschränkend, da es auch gültige Eingaben des Users blockiert. Dies ist bei einer Web-Applikation wohl aber eher nicht erwünscht. 
+				Ein besseres System dafür hat man im sogenannten WAF (Web Application Firewall) gefunden. Diese Sicherheitslösung filtert die Eingaben nach vordefinierten Regeln und kann somit zwischen gültigen Nutzerfragen und möglichen Angriffen unterscheiden. Grundsätzlich basiert der Schutz dieser Technologie demnach auf einer korrekten Auswahl und Konfiguration der Filterregeln. Das Aufwendige bei dieser Art von Internetsicherheit ist, dass ein tiefes, grundlegendes Verständnis über den individuellen Traffic auf der jeweiligen Webanwendung gefragt ist. 
+				Eine weitere effektive Methode ist das Umwandeln von sogenannten Skript-Zeichen. Dies kann nämlich verhindern, dass ausführbare Metazeichen der Skripte vom Server eingelesen werden. Somit wird verhindert, dass das Skript beim Darstellen der Webseite ausgeführt wird.
+
+			</article>
+	<div id="Auswirkungen von XSS auf die Welt">
+		<h2>Auswirkungen von XSS auf die Welt </h2>
+	</div>
+		<article class=".article">
+			Cyberkriminelle verwenden häufig XSS-Angriffe als Grundlage für weitere Angriffe wie E-Mail-Spam, Phishing oder DDoS-Angriffe. Weitere Bereiche sind Crypto-Mining und Cookie-Diebstahl. Normalerweise zielen die Angreifer auf die User der entsprechenden Website ab. Ist ein Angriff erfolgreich werden deren Daten zerstört, manipuliert oder gestohlen. Infolgedessen wird das Image eines Unternehmens langfristig geschädigt, was in der Folge zu unbestimmten Umsatzeinbussen führt. 
+			Geschäftsschädigend für ein Unternehmen ist aber auch XSS-basiertes Website-Defacement. Hierbei führen die Angreifer die jeweiligen Firmen öffentlich vor. Egal wie gross oder klein ein Unternehmen oder eine Branche ist, alle diejenigen welche eigene Internetseiten und Webanwendungen haben, sind potenzielle Opfer für Cross-site Scripting. 
+			Da User und Unternehmen gleichermassen davon betroffen sind, gilt es einen rigorosen Schutz von Webanwendungen zu haben, welche der Webmaster gewährleisten soll. Die Eingaben des Users müssen äusserst genau geprüft werden, sodass kein Schadcode auf den Webserver geladen werden kann. Zur weiteren Sicherheit bietet sich durch mühsames Whitelisting von erlaubten Eingabemustern, eine weitere Möglichkeit an. Eine gleichermassen zuverlässige Abwehrmöglichkeit findet sich zudem in der WAF (Web Application Firewall).
+
+		</article>
+	<div id="Glossar">
+		<h2>Glossar </h2>
+	</div>
+		<article class=".article">
+			Statische Website: Dabei handelt es sich um eine Art von Website, welche nur statische Inhalte bereitstellt, also Inhalte, die sich nicht verändern. Sie muss keine serverseitigen Skripts ausführen und ist damit auch einfach zu hosten. 
+			DOM-basiert: Der Browser analysiert das HTML-Dokument und erstellt daraus im Arbeitsspeicher das Dokument-objekt-modell. Das heisst es erstellt eine Repräsentation des Dokuments, auf das beispielsweise mit JavaScript zugegriffen werden kann.
+			Active-Scripting: Ist eine Technologie, bei der man eine Skriptsprache, wie Microsoft Visual Basic Scripting Edition (VBScript) oder Microsoft JScript dazu verwendet, um bestimmte Prozesse einer Website beispielsweise zum Laufen zu bringen. 
+			Whitelist: Grundsätzlich ist die Whitelist eine Liste, in welcher alle Daten und Eingaben eingetragen wurden, welche erlaubt sind. Falls Daten geschickt werden, die nicht erlaubt sind, werden sie blockiert. Das Gegenstück dazu ist die Blacklist, welche eine Liste mit unerlaubten Daten ist. 
+
+
+		</article>
+
+
 	<a href="#" class="scrollup" title="Nach oben!"> nach oben</a>
 	
 	<footer>&copy; Copyright 2021 Felix Ottiger, Christian Cataldo</footer>
