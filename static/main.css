@@ -4,6 +4,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #fffaf0;
+
 }
 
 article{ /* Eigenschaften von den beiden unterkapitel-titel */
@@ -21,27 +22,33 @@ article{ /* Eigenschaften von den beiden unterkapitel-titel */
   padding-right: 700px;
   padding-left: 50px;
 }
-.middle{
+#middle{
   text-align: center;
 }
-.titlepage{
-  background-color: #1B1B1B;
-}
+
 .pictureleft{
-  float: left;
   background-color: #1B1B1B;
+  padding-bottom: 100px;
 }
 .pictureright{
-  float: right;
   background-color: #1B1B1B;
 }
 h1 { /* Eigenschaften von h1 */
   color: #FFF ;
   width: 100%;  /* Wo erscheint die Schrift auf dem Screen */
   font-family: "Times New Roman", Times, serif; /* Schriftart */
-  font-size: 120px; /* schreibgrösse */
+  font-size: 180px; /* schreibgrösse */
   padding-top: 100px; /* Freiraum oben */
+  padding-bottom: 120px;
   text-align: center; /* Wo erscheint die Schrift auf dem Screen */
+  background-color: #1B1B1B;
+}
+h4 {
+  padding-top: 10px; 
+  text-align: center; 
+  background-color: #1B1B1B;
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
 }
 
 h2 { /* Eigenschaften von h2 */
@@ -75,14 +82,13 @@ form { /* Comment section: Eingabe ist nebeneinander */
   display: inline-block;
 }
 
-.gap {  /* Oben Platz machen */
-  padding-top: 80px; 
-}
-
 #link-container { /* In die Mitte schieben */
   text-align: center;
   text-decoration: none;
   padding-top: 20px;
+}
+.commentsbackground{
+
 }
 
 .comments { /* Auflistungspunkte rauslöschen */
@@ -96,6 +102,7 @@ form { /* Comment section: Eingabe ist nebeneinander */
   border-width: 5px;
   margin-bottom: 40px;
   position: relative;
+
 }
 
 .bleft { /* feiner, farbiger Rand der Kommentare links */

@@ -5,7 +5,7 @@
 		<link rel="stylesheet" href="../static/main.css" type="text/css">
 		<title>Comments</title>
 	</head>
-	<body>
+	<body >
 		<h1>Comments Page!</h1>
 		
 			<form class="commentform" action="/comments/post/" method="post" autocomplete="off" >
@@ -19,7 +19,7 @@
 				<input type="submit" value="Reset Comments" class="resetcomments button">
 			</form>
 		
-		<ul class="comments">
+		<ul class="comment">
 			{{comments | safe}}
 		</ul>
 	</body>
