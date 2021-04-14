@@ -7,8 +7,9 @@ body {
   color: #fffaf0;
 }
 
-.article-style{ /* Eigenschaften von den beiden unterkapitel-titel */
-  color:white;
+.article{ /* Eigenschaften von den beiden unterkapitel-titel */
+  background-color: #1B1B1B;
+  
 }
 
 h1 { /* Eigenschaften von h1 */
@@ -183,6 +184,8 @@ form { /* Comment section: Eingabe ist nebeneinander */
   width: 100%;
   margin-top: 0px;
   padding-left: 0px;
+  float: center;
+  margin-left:-8px 
 }
 .topnavigation a{
   text-decoration: none;
@@ -192,12 +195,14 @@ form { /* Comment section: Eingabe ist nebeneinander */
   color: white;
   padding: 25px;
   display: block;
-  float: right;
-  padding-left: 6.65%;
-  padding-right: 6.65%;
+
 }
 .topnavigation a:hover{
   background: #808080;
   color:black;
 }
-
+.list-inline>li{
+  display:inline-block;
+  padding-right:5px;
+  padding-left:5px;
+}
