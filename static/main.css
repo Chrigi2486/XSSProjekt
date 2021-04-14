@@ -179,11 +179,11 @@ form { /* Comment section: Eingabe ist nebeneinander */
 .topnavigation{
   overflow: hidden;
   background-color: #333;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   margin-top: 0px;
-  padding-left: 0px;
+  padding-left: 22%;
   float: center;
   margin-left:-8px 
 }
