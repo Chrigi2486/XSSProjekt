@@ -7,19 +7,14 @@ body {
 }
 
 article { /* Eigenschaften von den beiden unterkapitel-titel */
-  background-color: #1B1B1B;
   text-align: justify;
   line-height: 200%;
   font-size: 18px;
-  padding: 50px;
+  padding: 50px ;
 }
 
 .artimg {
   min-height: 400px;
-}
-
-section {
-  text-align: center;
 }
 
 .imgright {
@@ -33,8 +28,19 @@ section {
 }
 
 .middle {
-  text-align: justify;
-  padding: 30px;
+  text-align: center;
+  padding: 60px;
+  padding-left: 300px;
+  padding-right: 300px;
+
+}
+.black{
+  background-color: #1B1B1B;
+  color: #fff;
+}
+.white{
+  background-color: #fff;
+  color: #000;
 }
 
 h1 { /* Eigenschaften von h1 */
@@ -44,7 +50,6 @@ h1 { /* Eigenschaften von h1 */
   font-size: 180px; /* schreibgrösse */
   padding-top: 120px; /* Freiraum oben */
   padding-bottom:120px;
-  margin-top: 78px;
   text-align: center; /* Wo erscheint die Schrift auf dem Screen */
   background: url(XSSBackground.jpg);
   background-size: 800px auto;
@@ -58,10 +63,10 @@ h2 { /* Eigenschaften von h2 */
   font-weight: 250px; /* Dicke der Schrift */
   font-size: 70px;  /* schreibgrösse */
   /*font-family: Georgia; /* Schriftart */
-  padding-top: 60px;
-  padding-left: 60px;
+  padding-top: 30px;
   line-height: 24px;  /* abstand oben */
   text-align: left;/* Wo erscheint die Schrift auf dem Screen */
+  text-align: center;
 }
 
 p { /* Eigenschaften von paragraph p */

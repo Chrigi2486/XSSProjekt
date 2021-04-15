@@ -19,20 +19,21 @@
 		</ul>
 	</header>
 	<h1>Cross-site Scripting</h1>
-	<div id="Allgemeines">
+	<div id="Allgemeines" class="white">
 		<h2>Allgemeines</h2>
+	</div>
 		<article class="middle">
 				Cross-Site Scripting (XSS) ist eine Angriffsform, bei der man an vertrauliche Daten gelangt, Webapplikationen übernimmt oder sonstige Schäden anrichtet. Sie ist eine der häufigsten Angriffsmethoden im Internet. Hierbei wird der «Schadcode» durch eine Sicherheitslücke auf dem Client oder dem Server in eine scheinbar sichere Umgebung eingebettet. Mit Hilfe von XSS lassen sich vertrauliche Informationen wie Passwörter ergaunern, Browser übernehmen oder Internetseiten verändern.<br>
 				Cross-Site-Scripting verwendet zu diesem Zweck die Programmiersprache JavaScript. JavaScript ist eine sehr verbreitete Programmiersprache im Internet, die bei Webseiten Hintergrundbefehle ausführen und den HTML Code der Webseite dynamisch verändern kann.<br>
 				Die Gefahr des Cross-Site-Scripting besteht immer dann, wenn eine Webanwendung gesammelte Daten nicht ausreichend überprüft und diese Daten direkt in den HTML Code der Webseite einfügt. Dies kann zur Einbettung von JavaScript Code führen, welcher bei einem Besuch dieser Webseite vom Browser des Clients ausgeführt wird.
 		</article>
-	</div>
+
 	<div id="Angriff">
 		<h2>Angriff</h2>
 	</div>
-	<div>
+	<div class="black">
 		<h3>Persistentes Cross Site Scripting</h3>
-		<article class="artimg">
+		<article class="artimg ">
 			<img class="imgright" src="../static/persistentes_cross_site_scripting_neu_DE_desktop.png" src="/static/persistentes_cross_site_scripting_neu_DE_desktop.png">
 			Beim persistenten Cross-Site Scripting nutzt der Angreifer wieder eine Sicherheitslücke auf dem Server aus, wie beispielsweise ein Kommentarfeld ohne Sicherheitsmassnahmen. Dies ermöglicht es ihm seinen Schadcode dort einzufügen. Nun wird dieser Schadcode allerdings dauerhaft (persistent) in der Datenbank des Webservers und somit auch auf dessen Webseite gespeichert. Der Angreifer braucht also nicht einmal mehr einen Link dem User unterzuschieben, da alle Clients, die diese Webseite besuchen, den Schadcode ausführen. <br> Grundsätzlich sind alle Webanwendungen, die Benutzereingaben auf dem Server speichern und erneut ausgeben, der dauernden Gefahr ausgesetzt von dieser Art von kontinuierlichem XSS-Angriff betroffen zu werden, es sei denn die Eingabe wird sorgfältig geprüft. Mit dieser Art von Angriff können Hacker beispielsweise große Mengen an Anmeldeinformationen aus nicht ausreichend gesicherten Foren stehlen oder durch die vielen Infizierten User der Webseite weiterführende DDOS-Angriffe ausführen oder Crypto-Mining betreiben.
 			<div id="link-container">
@@ -41,18 +42,18 @@
 			<p>Probiere die persistente Attacke auf unserer Website selber aus. Klicke dafür auf den Link oben.</p>
 		</article>
 	</div>
-	<div>
+	<div class="white">
 		<h3>Reflextiertes Cross-site Scripting </h3>
-		<article class="artimg">
+		<article class="artimg ">
 			<img class="imgleft" src="../static/reklektiertes_cross_site_scripting_neu_DE_desktop.png" src="/static/reklektiertes_cross_site_scripting_neu_DE_desktop.png">
 			Beim reflektierenden beziehungsweise nicht-persistenten Cross-Site Scripting wird der Schadcode in einen URL implementiert. Ruft ein Nutzer die präparierte Adresse über einen Webbrowser auf, wird das schadhafte Skript mitgeschickt. Nicht ausreichend gesicherte Server untersuchen den Code nicht genügend und erstellen für den User die manipulierte Website mit dem Schadcode der Angreifer. Macht der User nun eine Eingabe, könnte der Angreifer diese Angaben klauen. Diese Art von Angriff ist daher sehr heikel, da sie für den User nicht umgehend feststellbar ist. Der User hat das Gefühl, dass er sich auf der angeblich vertrauenswürdigen Website befindet. Würde der User die Website mit dem richtigen Link laden, wäre auch kein Schadcode in der Webanwendung enthalten. 
 
 			<link >
 		</article>
 	</div>
-	<div>
+	<div class="black">
 		<h3>Lokales Cross Site Scripting (DOM-basiert) </h3>
-		<article class="artimg">
+		<article class="artimg ">
 			<img class="imgright" src="../static/lokales_cross_site_scripting_neu_DE_desktop.png" src="/static/lokales_cross_site_scripting_neu_DE_desktop.png">
 			Beim lokalen Cross-Site Scripting sind nicht der Server oder die Webanwendung das Problem, sondern der User, der einen Browser mit einer Sicherheitslücke benutzt. Somit ist diese Art von XSS sogar bei statischen Webseiten möglich, wenn diese JavaScript unterstützen. Kommt es zu einer Attacke, platzieren die Angreifer den Schadcode direkt im Browser des Users. Dies erfolgt über präparierte Links, welche der User öffnet. Diese unsichere Website ladet den Schadcode, welcher nun im Hintergrund ausgeführt wird. Ladet der User nun wieder sichere Webseiten und loggt sich ein, laufen serverseitige Sicherheitsmassnahmen ins Leere, da sie von diesem Angriff nichts wissen.<br>
 			Aus eigener Erfahrung kennt man solche Attacken beispielsweise aus Gewinnspielen, welche einem per Spam-Mail zugeschickt werden oder im Internet aufpoppen. Anschliessend wird unbemerkt der Schadcode in den Browser des Users, bspw. Google Chrome, eingefügt. Nun läuft dieses «Programm» immer im Hintergrund, wenn der Browser geöffnet wurde. Loggt man sich nun bei seiner Bank ein, so werden die Anmeldedaten trotzdem gestohlen, da das Problem lokal, also auf dem eigenen Rechner im Browser sich befindet und nicht etwa auf dem Webserver der Bank.
