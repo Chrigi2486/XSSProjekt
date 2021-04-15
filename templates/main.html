@@ -47,7 +47,7 @@
 	</div>
 	<div class="white">
 		<article class="artimg ">
-			<h3>Reflextiertes Cross-site Scripting</h3>
+			<h3 >Reflextiertes Cross-site Scripting</h3>
 			<img class="imgleft" src="../static/reklektiertes_cross_site_scripting_neu_DE_desktop.png" src="/static/reklektiertes_cross_site_scripting_neu_DE_desktop.png">
 			Beim reflektierenden beziehungsweise nicht-persistenten Cross-Site Scripting wird der Schadcode in einen URL implementiert. Ruft ein Nutzer die präparierte Adresse über einen Webbrowser auf, wird das schadhafte Skript mitgeschickt. Nicht ausreichend gesicherte Server untersuchen den Code nicht genügend und erstellen für den User die manipulierte Website mit dem Schadcode der Angreifer. Macht der User nun eine Eingabe, könnte der Angreifer diese Angaben klauen. Diese Art von Angriff ist daher sehr heikel, da sie für den User nicht umgehend feststellbar ist. Der User hat das Gefühl, dass er sich auf der angeblich vertrauenswürdigen Website befindet. Würde der User die Website mit dem richtigen Link laden, wäre auch kein Schadcode in der Webanwendung enthalten. 
 
@@ -71,7 +71,7 @@
 	<div class="white">
 		<article>
 			<h3>Clientseitiger Schutz</h3>
-			<img class="imgleft" src="" src="">
+			<img class="imgleft size" src="../static/Shieldup.png" src="/static/Shieldup.png">
 			Beim clientseitigen Schutz steht hauptsächlich die Blockierung von gefährlichen Skripten im Vordergrund. Die simpelste Möglichkeit, um einen Angriff zu verhindern, besteht darin, dass man ganz einfach die JavaScript-Unterstützung im Browser ausschaltet. Dadurch wird nämlich jeglicher JavaScript-Code nicht gelesen bzw. ignoriert und die schädlichen Skripte können nicht ausgeführt werden. Man nennt dies auch das Deaktivieren des Active-Scripting. Für die meisten Browser gibt es heute aber sogenannte Add-ons, welche bereits standardmässig Websiteinhalte wie JavaScript, Microsoft Silverlight, Java-Applets oder wie früher Adobe Flash, automatisch sperren. Die Sperren können dann aber natürlich vom User temporär aufgehoben werden. Man kann Webseiten, wenn man ihnen zu 100% vertraut auch auf eine sogenannte Whitelist setzen. <br>
 			Die Deaktivierung von JavaScript, kommt dennoch mit einigen Nachteilen. Bei den meisten modernen Webseiten, wird JavaScript benutzt, um Webseiten dynamisch anzuzeigen und ihnen weitere Funktionalitäten zu geben. Mit der Deaktivierung von JavaScript muss man sich dementsprechend zwischen Sicherheit und Nutzbarkeit entscheiden.
 			Zudem ist es wichtig, dass man die Browser-Updates durchführt, um präventiv gegen lokales XSS geschützt zu sein. Grundsätzlich gilt aber folgender Anspruch: Sie sollten bei externen Daten wie Links, immer misstrauisch sein und diese sorgfältig prüfen, bevor Sie sie verwenden.
@@ -81,6 +81,7 @@
 	<div class="black">
 		<article>
 			<h3>Serverseitiger Schutz</h3>
+			<img class="imgright resize" src="../static/depositphotos_10917617-stock-photo-server.jpg" src="/static/depositphotos_10917617-stock-photo-server.jpg">
 			Als Betreiber einer Webseite fallen die Schutzmassnahmen gegen Cross-Site Scripting mühsam aus. Ein Websitebetreiber hat nämlich zwei Möglichkeiten. Einerseits kann mit sehr genauen, aber auch mühsamen Code-Richtlinien und Eingabeprüfungen dem Webmaster auf die Sprünge helfen, die Sensibilität bzw. die Angriffsfläche der Webseite zu minimieren. <br> Wie bereits erwähnt gibt es aber auch die Möglichkeit, dass ein Websitebetreiber über sogenanntes Whitelisting gutartige Eingabewerte definiert. Demnach würde also schadhafter Code gar nicht an den Server übermittelt. Das Problem bei dieser Maßnahme besteht nun darin, dass das Ganze sehr aufwendig ist und damit ein hohes Fehlerpotenzial aufweiset. Durch unvollständige Angaben ist das Whitelisting zudem ziemlich einschränkend, da es auch gültige Eingaben des Users blockiert. Dies ist bei einer Web-Applikation wohl aber eher nicht erwünscht. <br>
 			Ein besseres System dafür hat man im sogenannten WAF (Web Application Firewall) gefunden. Diese Sicherheitslösung filtert die Eingaben nach vordefinierten Regeln und kann somit zwischen gültigen Nutzerfragen und möglichen Angriffen unterscheiden. Grundsätzlich basiert der Schutz dieser Technologie demnach auf einer korrekten Auswahl und Konfiguration der Filterregeln. Das Aufwendige bei dieser Art von Internetsicherheit ist, dass ein tiefes, grundlegendes Verständnis über den individuellen Traffic auf der jeweiligen Webanwendung gefragt ist. <br>
 			Eine weitere effektive Methode ist das Umwandeln von sogenannten Skript-Zeichen. Dies kann nämlich verhindern, dass ausführbare Metazeichen der Skripte vom Server eingelesen werden. Somit wird verhindert, dass das Skript beim Darstellen der Webseite ausgeführt wird.
@@ -100,11 +101,11 @@
 	<div id="Glossar">
 		<h2>Glossar</h2>
 	</div>
-	<div class="white">
-		<article class="middle">
-			Statische Website: Dabei handelt es sich um eine Art von Website, welche nur statische Inhalte bereitstellt, also Inhalte, die sich nicht verändern. Sie muss keine serverseitigen Skripts ausführen und ist damit auch einfach zu hosten.<br> 
-			DOM-basiert: Der Browser analysiert das HTML-Dokument und erstellt daraus im Arbeitsspeicher das Dokument-objekt-modell. Das heisst es erstellt eine Repräsentation des Dokuments, auf das beispielsweise mit JavaScript zugegriffen werden kann.<br>
-			Active-Scripting: Ist eine Technologie, bei der man eine Skriptsprache, wie Microsoft Visual Basic Scripting Edition (VBScript) oder Microsoft JScript dazu verwendet, um bestimmte Prozesse einer Website beispielsweise zum Laufen zu bringen. <br>
+	<div class="black">
+		<article class="Glossar">
+			Statische Website: Dabei handelt es sich um eine Art von Website, welche nur statische Inhalte bereitstellt, also Inhalte, die sich nicht verändern. Sie muss keine serverseitigen Skripts ausführen und ist damit auch einfach zu hosten.<br> <br>
+			DOM-basiert: Der Browser analysiert das HTML-Dokument und erstellt daraus im Arbeitsspeicher das Dokument-objekt-modell. Das heisst es erstellt eine Repräsentation des Dokuments, auf das beispielsweise mit JavaScript zugegriffen werden kann.<br><br>
+			Active-Scripting: Ist eine Technologie, bei der man eine Skriptsprache, wie Microsoft Visual Basic Scripting Edition (VBScript) oder Microsoft JScript dazu verwendet, um bestimmte Prozesse einer Website beispielsweise zum Laufen zu bringen. <br><br>
 			Whitelist: Grundsätzlich ist die Whitelist eine Liste, in welcher alle Daten und Eingaben eingetragen wurden, welche erlaubt sind. Falls Daten geschickt werden, die nicht erlaubt sind, werden sie blockiert. Das Gegenstück dazu ist die Blacklist, welche eine Liste mit unerlaubten Daten ist. 
 
 
@@ -113,7 +114,7 @@
 
 	<a href="#" class="scrollup" title="Nach oben!">nach oben</a>
 	
-	<footer>&copy; Copyright 2021 Felix Ottiger, Christian Cataldo</footer>
+	<footer>&copy; Copyright 2021 Christian Cataldo, Felix Ottiger</footer>
 
 </body>
 

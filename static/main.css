@@ -1,7 +1,7 @@
 /* css file*/
 /* Kommentar */
 
-body {
+body { /*  Formatierung vom Body */
   font-family: 'Roboto', sans-serif;
   color: #fffaf0;
   margin: 0;
@@ -14,46 +14,59 @@ article { /* Eigenschaften von den beiden unterkapitel-titel */
   padding: 50px;
 }
 
-.artimg {
+.artimg { 
   min-height: 455px;
 }
 
-.imgright {
+.imgright { /* Bild nach rechts  */
   float: right;
   padding-left: 30px;
 }
 
-.imgleft {
+.imgleft { /* Bild nach links  */
   float: left;
   padding-right: 30px;
 }
 
-.middle {
+.middle { /* Text ist im Zentrum gliedern  */
   text-align: center;
   padding: 60px;
   padding-left: 300px;
   padding-right: 300px;
 
 }
-.black {
+.black { /* Kontrast schwarzer Hintergrund, weisse Schrift  */
   background-color: #1B1B1B;
   color: #fff;
 }
 
-.white {
+.white { /* Konstrast weisser Hintergrund, schwarze Schrift  */
   background-color: #fff;
   color: #000;
 }
-
+.Glossar{ /* Glossar formatieren  */
+  text-align: justify;
+  padding: 60px;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.size{ /* Bild vergrössern  */
+  width: 20%;
+  height: auto;
+}
+.resize{
+  width: 29%;
+  height: auto;
+}
 h1 { /* Eigenschaften von h1 */
-  width: 100%;  /* Wo erscheint die Schrift auf dem Screen */
-  font-family: "Times New Roman", Times, serif; /* Schriftart */
+  width: 100%;  
+  font-family: "Times New Roman", Times, serif; /* Schriftart, Schriftgruppe/Familie */
   color: #FFE2B7;
-  font-size: 180px; /* schreibgrösse */
-  padding-top: 200px; /* Freiraum oben */
+  font-size: 180px; 
+  padding-top: 200px; 
   padding-bottom: 120px;
   margin-top: 0;
-  text-align: center; /* Wo erscheint die Schrift auf dem Screen */
+  text-align: center;
   background: url(XSSBackground.jpg);
   background-size: 800px auto;
 
@@ -62,13 +75,13 @@ h1 { /* Eigenschaften von h1 */
 
 h2 { /* Eigenschaften von h2 */
   color:black ;
-  width: 100%; /* Wo erscheint die Schrift auf dem Screen */
-  font-weight: 250px; /* Dicke der Schrift */
-  font-size: 70px;  /* schreibgrösse */
-  /*font-family: Georgia; /* Schriftart */
+  width: 100%; 
+  font-weight: 250px; 
+  font-size: 70px;  
   padding-top: 30px;
-  line-height: 24px;  /* abstand oben */
-  text-align: left;/* Wo erscheint die Schrift auf dem Screen */
+  padding-bottom: 15px;
+  line-height: 24px;  
+  text-align: left;
   text-align: center;
 }
 
@@ -93,6 +106,15 @@ textarea { /* Textfeld (kann nicht grösser oder kleiner sein) */
 
 form { /* Comment section: Eingabe ist nebeneinander */
   display: inline-block;
+}
+
+footer{ /* Einstellungen für Footer ganz am Ende mit unseren Namen */
+  font-family: 'Roboto', serif;
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 #link-container { /* In die Mitte schieben */
@@ -171,8 +193,11 @@ form { /* Comment section: Eingabe ist nebeneinander */
 .commentform { /* Box mit den Comments-settings */
   position: relative;
   text-align: center;
-  margin: 0 auto;
+  margin: -121px auto;
   width: 100%;
+  padding-top: 100px;
+  padding-bottom: 10px;
+  background-color: #1B1B1B;
 }
 
 .submit { /* submit_Button */
@@ -183,7 +208,7 @@ form { /* Comment section: Eingabe ist nebeneinander */
 .resetcomments { /* resetcomments-Button */
   position: relative;
   left: 400%;
-  top: -40px;
+  top: -28px;
 }
 
 .button { /* Allg. Einstellungen für Buttons */
@@ -213,14 +238,14 @@ form { /* Comment section: Eingabe ist nebeneinander */
   margin-left: 91%;
   border: 1px solid #c9c9c9;
   border-radius: 15px;
-  transition: 1s; /* Slide-Animation am Anfang */
+  transition: 1s; /* Slide-Animation am Anfang und fade In */
 }
 
 .scrollup:hover { /* Animation für Buttons   */
   background: #00ff99;
 }
 
-.topnavigation {
+.topnavigation { /* Grobeinstellungen zu Navigationsbar; Platz, Grösse, HIntergrund   */
   background-color: #333;
   position: fixed;
   top: 0;
@@ -229,7 +254,7 @@ form { /* Comment section: Eingabe ist nebeneinander */
   padding-left: 20px; 
 }
 
-.topnavigation a {
+.topnavigation a { /* Spezifische Einstellungen zur Navigations-Bar; Content-Ansicht  */
   text-decoration: none;
   font-family: arial black;
   text-align: center;
@@ -239,24 +264,24 @@ form { /* Comment section: Eingabe ist nebeneinander */
   display: block;
 }
 
-.topnavigation a:hover {
+.topnavigation a:hover { /* Animation, dass beim drauffahren mit der Maus aufleuchtet  */
   background: #808080;
   color: black;
 }
 
-.list-inline li {
+.list-inline li { /* Formatierung zur Listen spezifischen Form der Navigations-Bar  */
   display: inline-block;
   padding-right: 5px;
   padding-left: 5px;
 }
 
-#icon {
+#icon { /* Position Icon oben links  */
   padding-right: 50px;
   float: left;
   padding: 15px 50px 0px 0px;
 }
 
-#iconlink {
+#iconlink { /* Content icon  */
   all: unset;
   color: #FFE2B7;
   font-size: 40px;
