@@ -4,42 +4,47 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #fffaf0;
-
 }
 
-article{ /* Eigenschaften von den beiden unterkapitel-titel */
+article { /* Eigenschaften von den beiden unterkapitel-titel */
   background-color: #1B1B1B;
   line-height: 200%;
   font-size: 18px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-section{
-  text-align: center;
-}
-.right{
-  padding-right: 50px;
-  padding-left: 700px;
-}
-.left{
-  padding-right: 700px;
-  padding-left: 50px;
-}
-#middle{
+
+section {
   text-align: center;
 }
 
-.pictureleft{
+.right {
+  padding-right: 50px;
+  padding-left: 700px;
+}
+
+.left {
+  padding-right: 700px;
+  padding-left: 50px;
+}
+
+#middle {
+  text-align: center;
+}
+
+.pictureleft {
   background-color: #1B1B1B;
   padding-bottom: 100px;
 }
-.pictureright{
+
+.pictureright {
   background-color: #1B1B1B;
 }
+
 h1 { /* Eigenschaften von h1 */
-  color: #FFF ;
   width: 100%;  /* Wo erscheint die Schrift auf dem Screen */
   font-family: "Times New Roman", Times, serif; /* Schriftart */
+  color: #FFE2B7;
   font-size: 180px; /* schreibgrösse */
   padding-top: 100px; /* Freiraum oben */
   padding-bottom: 120px;
@@ -51,12 +56,12 @@ h2 { /* Eigenschaften von h2 */
   color:black ;
   width: 100%; /* Wo erscheint die Schrift auf dem Screen */
   font-weight: 250px; /* Dicke der Schrift */
-  font-size: 30px;  /* schreibgrösse */
+  font-size: 70px;  /* schreibgrösse */
   /*font-family: Georgia; /* Schriftart */
   padding-top: 60px;
-  padding-bottom: 60px; /* Freiraum unten */
+  padding-left: 60px;
   line-height: 24px;  /* abstand oben */
-  text-align: center;/* Wo erscheint die Schrift auf dem Screen */
+  text-align: left;/* Wo erscheint die Schrift auf dem Screen */
 }
 
 p { /* Eigenschaften von paragraph p */
@@ -83,7 +88,8 @@ form { /* Comment section: Eingabe ist nebeneinander */
   text-decoration: none;
   padding-top: 20px;
 }
-.commentsbackground{
+
+.commentsbackground {
 
 }
 
@@ -98,7 +104,6 @@ form { /* Comment section: Eingabe ist nebeneinander */
   border-width: 5px;
   margin-bottom: 40px;
   position: relative;
-
 }
 
 .bleft { /* feiner, farbiger Rand der Kommentare links */
@@ -200,14 +205,14 @@ form { /* Comment section: Eingabe ist nebeneinander */
   margin-left: 91%;
   border: 1px solid #c9c9c9;
   border-radius: 15px;
-  transition: 1s; } /* Slide-Animation am Anfang */
-}
-.scrollup:hover{ /* Animation für Buttons   */
-  background: #00ff99; 
+  transition: 1s; /* Slide-Animation am Anfang */
 }
 
-.topnavigation{
+.scrollup:hover { /* Animation für Buttons   */
+  background: #00ff99;
+}
 
+.topnavigation {
   background-color: #333;
   position: fixed;
   top: 0;
@@ -217,7 +222,8 @@ form { /* Comment section: Eingabe ist nebeneinander */
   float: center;
   margin-left:-8px 
 }
-.topnavigation a{
+
+.topnavigation a {
   text-decoration: none;
   font-family: arial black;
   text-align: center;
@@ -225,13 +231,14 @@ form { /* Comment section: Eingabe ist nebeneinander */
   color: white;
   padding: 25px;
   display: block;
-
 }
-.topnavigation a:hover{
+
+.topnavigation a:hover {
   background: #808080;
   color:black;
 }
-.list-inline>li{
+
+.list-inline li {
   display:inline-block;
   padding-right:5px;
   padding-left:5px;
