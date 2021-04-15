@@ -18,18 +18,21 @@ section {
   text-align: center;
 }
 
-.right {
+.right article {
+  text-align: justify;
   padding-right: 50px;
   padding-left: 700px;
 }
 
-.left {
+.left article {
+  text-align: justify;
   padding-right: 700px;
   padding-left: 50px;
 }
 
-#middle {
-  text-align: center;
+.middle {
+  text-align: justify;
+  padding: 30px;
 }
 
 .pictureleft {
