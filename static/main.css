@@ -42,10 +42,14 @@ h1 { /* Eigenschaften von h1 */
   font-family: "Times New Roman", Times, serif; /* Schriftart */
   color: #FFE2B7;
   font-size: 180px; /* schreibgrösse */
-  padding-top: 100px; /* Freiraum oben */
+  padding-top: 200px; /* Freiraum oben */
   padding-bottom: 120px;
+  margin-top: 100px;
   text-align: center; /* Wo erscheint die Schrift auf dem Screen */
   background: url(XSSBackground.jpg);
+  background-size: 800px auto;
+
+
 }
 
 h2 { /* Eigenschaften von h2 */
@@ -83,10 +87,6 @@ form { /* Comment section: Eingabe ist nebeneinander */
   text-align: center;
   text-decoration: none;
   padding-top: 20px;
-}
-
-.commentsbackground {
-
 }
 
 .comments { /* Auflistungspunkte rauslöschen */
