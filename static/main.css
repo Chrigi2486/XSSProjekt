@@ -44,19 +44,7 @@ h1 { /* Eigenschaften von h1 */
   padding-top: 100px; /* Freiraum oben */
   padding-bottom: 120px;
   text-align: center; /* Wo erscheint die Schrift auf dem Screen */
-  background-color: #1B1B1B;
-}
-h4 {
-  padding-top: 10px; 
-  text-align: center; 
-  opacity: 50%;
-  background-color: #D3D3D3;
-  z-index: 10000;
-  position: relative;
-  top: 100;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 32px;
-  font-weight: 1;
+  background: url(XSSBackground.jpg);
 }
 
 h2 { /* Eigenschaften von h2 */
@@ -219,7 +207,7 @@ form { /* Comment section: Eingabe ist nebeneinander */
 }
 
 .topnavigation{
-  overflow: hidden;
+
   background-color: #333;
   position: fixed;
   top: 0;
