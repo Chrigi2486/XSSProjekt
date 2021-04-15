@@ -4,17 +4,18 @@
 body {
   font-family: 'Roboto', sans-serif;
   color: #fffaf0;
+  margin: 0;
 }
 
 article { /* Eigenschaften von den beiden unterkapitel-titel */
   text-align: justify;
   line-height: 200%;
   font-size: 18px;
-  padding: 50px ;
+  padding: 50px;
 }
 
 .artimg {
-  min-height: 400px;
+  min-height: 455px;
 }
 
 .imgright {
@@ -34,11 +35,12 @@ article { /* Eigenschaften von den beiden unterkapitel-titel */
   padding-right: 300px;
 
 }
-.black{
+.black {
   background-color: #1B1B1B;
   color: #fff;
 }
-.white{
+
+.white {
   background-color: #fff;
   color: #000;
 }
@@ -48,8 +50,9 @@ h1 { /* Eigenschaften von h1 */
   font-family: "Times New Roman", Times, serif; /* Schriftart */
   color: #FFE2B7;
   font-size: 180px; /* schreibgrösse */
-  padding-top: 120px; /* Freiraum oben */
-  padding-bottom:120px;
+  padding-top: 200px; /* Freiraum oben */
+  padding-bottom: 120px;
+  margin-top: 0;
   text-align: center; /* Wo erscheint die Schrift auf dem Screen */
   background: url(XSSBackground.jpg);
   background-size: 800px auto;
@@ -67,6 +70,10 @@ h2 { /* Eigenschaften von h2 */
   line-height: 24px;  /* abstand oben */
   text-align: left;/* Wo erscheint die Schrift auf dem Screen */
   text-align: center;
+}
+
+h3 {
+  margin-top: 0;
 }
 
 p { /* Eigenschaften von paragraph p */
@@ -219,9 +226,7 @@ form { /* Comment section: Eingabe ist nebeneinander */
   top: 0;
   width: 100%;
   margin-top: 0px;
-  padding-left: 22%;
-  float: center;
-  margin-left:-8px 
+  padding-left: 20px; 
 }
 
 .topnavigation a {
@@ -236,11 +241,24 @@ form { /* Comment section: Eingabe ist nebeneinander */
 
 .topnavigation a:hover {
   background: #808080;
-  color:black;
+  color: black;
 }
 
 .list-inline li {
-  display:inline-block;
-  padding-right:5px;
-  padding-left:5px;
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#icon {
+  padding-right: 50px;
+  float: left;
+  padding: 15px 50px 0px 0px;
+}
+
+#iconlink {
+  all: unset;
+  color: #FFE2B7;
+  font-size: 40px;
+  font: "Roboto";
 }
