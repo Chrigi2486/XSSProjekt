@@ -91,7 +91,6 @@ h3 {
 }
 
 p { /* Eigenschaften von paragraph p */
-  color: white;
   text-align: center;
   padding-bottom: 0px; 
   text-decoration: none;
@@ -126,6 +125,8 @@ footer { /* Einstellungen für Footer ganz am Ende mit unseren Namen */
 
 .comments { /* Auflistungspunkte rauslöschen */
   list-style-type: none;
+  padding-left: 200px;
+  padding-bottom: 200px;
 }
 
 .comments li { /* Kommentarfeldformatierung */
@@ -193,23 +194,15 @@ footer { /* Einstellungen für Footer ganz am Ende mit unseren Namen */
 
 .commentform { /* Box mit den Comments-settings */
   position: relative;
-  text-align: center;
-  margin: -121px auto;
+  padding-left: 200px;
+  text-align: left;
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 30px;
   background-color: #1B1B1B;
 }
 
-.submit { /* submit_Button */
-  position: relative;
-  right: -5.7%;
-}
-
-.resetcomments { /* resetcomments-Button */
-  position: relative;
-  left: 400%;
-  top: -28px;
+#buttons {
+  padding-left: 200px;
+  padding-bottom: 100px;
 }
 
 .button { /* Allg. Einstellungen für Buttons */
@@ -219,6 +212,8 @@ footer { /* Einstellungen für Footer ganz am Ende mit unseren Namen */
   background: #89CFF0;
   border-color: black;
   border-width: 3px;
+  display: inline-block;
+  margin-right: 30px;
 }
 
 .button:hover { /* Animation für Button */
@@ -287,4 +282,14 @@ footer { /* Einstellungen für Footer ganz am Ende mit unseren Namen */
   color: #FFE2B7;
   font-size: 40px;
   font: "Roboto";
+}
+
+#Suchfeld {
+  padding-left: 200px;
+}
+
+#Suchergebnis {
+  padding-left: 200px;
+  padding-top: 100px;
+  padding-bottom: 200px;
 }

@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/static/main.css" type="text/css">
 		<link rel="stylesheet" href="../static/main.css" type="text/css">
-		<title>Comments</title>
+		<title>Comment Section</title>
 	</head>
-	<body >
-		<h1>Comments Page!</h1>
+	<body style="background: #1B1B1B;">
+		<header>
+			<ul class="topnavigation list-inline">
+				<li id="icon"><a id="iconlink" href="/">XSS</a></li>
+				<li><a href="#Kommentarfeld">Kommentarfeld</a></li>
+				<li><a href="#Kommentare">Kommentare</a></li>
+			</ul>
+		</header>
+		<h1>Comment Section</h1>
 		
-			<form class="commentform" action="/comments/post/" method="post" autocomplete="off" >
-				<label>Name:</label><br>
-				<input type="text" name="name" style="width: 330px;"><br><br>
-				<label>Comment:</label><br>
-				<textarea name="comment" cols="45" rows="5"></textarea><br><br>
-				<input type="submit" value="Submit" class="submit button">
-			</form>
-			<form action="/comments/reset/" method="post">
-				<input type="submit" value="Reset Comments" class="resetcomments button">
-			</form>
-		
-		<ul class="comments">
+		<form id="Kommentarfeld" class="commentform" action="/comments/post/" method="post" autocomplete="off">
+			<label>Name:</label><br>
+			<input type="text" name="name" style="width: 330px;"><br><br>
+			<label>Comment:</label><br>
+			<textarea name="comment" cols="45" rows="5"></textarea><br><br>
+		</form>
+		<form id="Reset" action="/comments/reset/" method="post"></form>
+		<div id=buttons>
+			<button class="button" type="submit" form="Reset">Reset Comments</button>
+			<button class="button" type="submit" form="Kommentarfeld" formaction="/comments/post/" formmethod="post">Submit Comment</button>
+		</div>
+	
+		<ul id="Kommentare" class="comments">
 			{{comments | safe}}
 		</ul>
 	</body>

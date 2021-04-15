@@ -40,7 +40,7 @@
 				<img class="imgright" src="../static/persistentes_cross_site_scripting_neu_DE_desktop.png" src="/static/persistentes_cross_site_scripting_neu_DE_desktop.png">
 				Beim persistenten Cross-Site Scripting nutzt der Angreifer wieder eine Sicherheitslücke auf dem Server aus, wie beispielsweise ein Kommentarfeld ohne Sicherheitsmassnahmen. Dies ermöglicht es ihm seinen Schadcode dort einzufügen. Nun wird dieser Schadcode allerdings dauerhaft (persistent) in der Datenbank des Webservers und somit auch auf dessen Webseite gespeichert. Der Angreifer braucht also nicht einmal mehr einen Link dem User unterzuschieben, da alle Clients, die diese Webseite besuchen, den Schadcode ausführen. <br> Grundsätzlich sind alle Webanwendungen, die Benutzereingaben auf dem Server speichern und erneut ausgeben, der dauernden Gefahr ausgesetzt von dieser Art von kontinuierlichem XSS-Angriff betroffen zu werden, es sei denn die Eingabe wird sorgfältig geprüft. Mit dieser Art von Angriff können Hacker beispielsweise große Mengen an Anmeldeinformationen aus nicht ausreichend gesicherten Foren stehlen oder durch die vielen Infizierten User der Webseite weiterführende DDOS-Angriffe ausführen oder Crypto-Mining betreiben.
 				<div id="link-container">
-	    			<a href="comments/"> Comment section</a>
+	    			<a href="comments/">Comment Section</a>
 				</div>
 				<p>Probiere die persistente Attacke auf unserer Website selber aus. Klicke dafür auf den Link oben.</p>
 			</article>
@@ -50,6 +50,10 @@
 				<h3>Reflektiertes Cross-site Scripting</h3>
 				<img class="imgleft" src="../static/reklektiertes_cross_site_scripting_neu_DE_desktop.png" src="/static/reklektiertes_cross_site_scripting_neu_DE_desktop.png">
 				Beim reflektierenden beziehungsweise nicht-persistenten Cross-Site Scripting wird der Schadcode in einen URL implementiert. Ruft ein Nutzer die präparierte Adresse über einen Webbrowser auf, wird das schadhafte Skript mitgeschickt. Nicht ausreichend gesicherte Server untersuchen den Code nicht genügend und erstellen für den User die manipulierte Website mit dem Schadcode der Angreifer. Macht der User nun eine Eingabe, könnte der Angreifer diese Angaben klauen. Diese Art von Angriff ist daher sehr heikel, da sie für den User nicht umgehend feststellbar ist. Der User hat das Gefühl, dass er sich auf der angeblich vertrauenswürdigen Website befindet. Würde der User die Website mit dem richtigen Link laden, wäre auch kein Schadcode in der Webanwendung enthalten. 
+				<div id="link-container">
+	    			<a href="search/">Search Field</a>
+				</div>
+				<p>Probiere die reflektierte Attacke auf unserer Website selber aus. Klicke dafür auf den Link oben.</p>
 			</article>
 		</div>
 		<div class="black">

@@ -2,17 +2,27 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Search</title>
-	<link rel="stylesheet" href="/static/main.css" type="text/css">
-	<link rel="stylesheet" href="../static/main.css" type="text/css">
-</head>
-<body>
-	Search page
-	<form>
-		<input type="text" name="search" value="{{search | safe}}">
-		<input type="submit" value="Search">
-	</form>
-	<p>{{search | safe}}</p>
-</body>
+	<head>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/static/main.css" type="text/css">
+		<link rel="stylesheet" href="../static/main.css" type="text/css">
+		<title>Search Field</title>
+	</head>
+	<body style="background: #1B1B1B;">
+		<header>
+			<ul class="topnavigation list-inline">
+				<li id="icon"><a id="iconlink" href="/">XSS</a></li>
+				<li><a href="#Suchfeld">Suchfeld</a></li>
+				<li><a href="#Suchergebnis">Suchergebnis</a></li>
+			</ul>
+		</header>
+		<h1>Search Field</h1>
+		<form id="Suchfeld">
+			<input type="text" name="search" value="{{search | safe}}" style="width: 330px;" autocomplete="off">
+			<br><br>
+			<input class="button" type="submit" value="Search">
+		</form>
+		<h3 id="Suchergebnis">{{search | safe}}</h3>
+	</body>
 </html>
