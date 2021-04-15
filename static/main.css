@@ -10,9 +10,12 @@ body {
 article{ /* Eigenschaften von den beiden unterkapitel-titel */
   background-color: #1B1B1B;
   line-height: 200%;
-  font-size: 22px;
+  font-size: 18px;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+section{
+  text-align: center;
 }
 .right{
   padding-right: 50px;
@@ -46,9 +49,14 @@ h1 { /* Eigenschaften von h1 */
 h4 {
   padding-top: 10px; 
   text-align: center; 
-  background-color: #1B1B1B;
-  width: 100%;
+  opacity: 50%;
+  background-color: #D3D3D3;
+  z-index: 10000;
+  position: relative;
+  top: 100;
   font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  font-weight: 1;
 }
 
 h2 { /* Eigenschaften von h2 */
