@@ -1,0 +1,3 @@
+To use the interactive features of the website, make sure to 'pip install flask'
+Then run app.py and you will find the website at:
+http://localhost:5000/
